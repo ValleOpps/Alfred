@@ -1,0 +1,67 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "header header"
+  "section aside"
+  "footer footer";
+  grid-gap: 25px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    grid-template-columns: 100% 100%;
+    grid-template-areas:
+    "header"
+    "section"
+    "aside"
+    "footer";
+    grid-gap: 25px;
+  }
+}
+
+h1 {
+  text-align: left;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: green;
+}
+
+aside {
+  grid-area: aside;
+  background-color: blue;
+}
+
+section {
+  grid-area: section;
+  background-color: yellow;
+}
+
+img {
+  width: 50%;
+}
+
+.rocket {
+  width: 200%;
+}
+
+.bolin {
+  width: 100%;
+}
